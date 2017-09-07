@@ -31,4 +31,6 @@ public interface DataSourceDao {
     List<RequestNote>  selectRequestNote(String userName);
 
     List<RequestNote>  selectRequestNoteByRequestNoteId(String requestNoteId);
+
+    String  updateRequestNoteStatusById(String requestNoteId, int statusCode);
 }

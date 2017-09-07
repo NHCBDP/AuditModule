@@ -24,4 +24,6 @@ public interface DataSourceService {
     List<RequestNote>  getRequestNote(String userName);
 
     List<RequestNote>  getRequestNoteByRequsetNoteId(String requestNoteId);
+
+    String  updateRequestNoteStatus(String requestNoteId, int statusCode);
 }

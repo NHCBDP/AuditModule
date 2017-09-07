@@ -37,6 +37,11 @@ public class BusinessController {
         return dataSourceService.getRequestNoteByRequsetNoteId(requestNoteId);
     }
 
+    @RequestMapping(value = "/updateRequestNoteStatus/{requestNoteId}/{statusCode}",method = RequestMethod.PUT)
+    public String updateRequestNoteStatus(@PathVariable("requestNoteId") String requestNoteId, @PathVariable("statusCode") int statusCode){
+        return dataSourceService.updateRequestNoteStatus(requestNoteId,statusCode);
+    }
+
 
 
 

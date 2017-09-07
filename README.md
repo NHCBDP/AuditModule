@@ -123,9 +123,10 @@ GET请求：http://localhost:8012/business/getRequestNoteByRequestNoteId/{reques
 
 PUT请求：http://localhost:8012/business/updateRequestNoteStatus/{requestNoteId}/{statusCode}
 
-返回：
+返回：27bfe9758f65430cb6908a9f43d19f31:2 或者 update error
 
 ---------------------------------------------------------
+
 
 
 

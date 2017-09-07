@@ -91,6 +91,13 @@ public class DataSourceDaoImpl implements DataSourceDao {
         return jdbcTemplate.query(sql,new RequestNoteRowMapper() );
     }
 
+    @Override
+    public String updateRequestNoteStatusById(String requestNoteId, int statusCode) {
+        String sql = "UPDATE requestNote SET status = "+statusCode+ " WHERE formId= '"+requestNoteId+"'";
+
+        return jdbcTemplate.update(sql)==1?(requestNoteId+":"+statusCode):"update error";
+    }
+
 
     class TableStructBeanRowMapper implements RowMapper<TableFieldBean> {
 
