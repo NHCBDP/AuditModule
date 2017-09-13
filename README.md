@@ -27,7 +27,7 @@ run port : 8012
 
 #登录：
 
- GET请求： http://localhost:8012/user/login?userName=wbliu&password=e10adc3949ba59abbe56e057f20f883e
+ GET请求： http://localhost:8012/AuditModule/user/login?userName=wbliu&password=e10adc3949ba59abbe56e057f20f883e
 
  响应：success 或者 error
    
@@ -37,7 +37,7 @@ run port : 8012
 
 #注册：
   
- POST请求： http://localhost:8012/user/register
+ POST请求： http://localhost:8012/AuditModule/user/register
  
  参数：{"userName":"test001","password":"123456"}
  
@@ -49,16 +49,14 @@ run port : 8012
 
 
 #登出
-GET 请求：http://localhost:8012/user/loginOut?userName=wbliu
+GET 请求：http://localhost:8012/AuditModule/user/loginOut?userName=wbliu
 
 响应：success 或者 error
 
 
--------------------------------------------
-
 ------------------------------------
 #获得用户的所有“申请单”记录；
-GET请求：http://localhost:8012/business/getRequestNote/{userName}
+GET请求：http://localhost:8012/AuditModule/business/getRequestNote/{userName}
 
 响应：
 [
@@ -97,9 +95,9 @@ GET请求：http://localhost:8012/business/getRequestNote/{userName}
 
 -------------------------------------------------
 
-# 根据‘申请单号’，获得用户的所有“申请单”记录；
+#根据‘申请单号’，获得用户的所有“申请单”记录；
 
-GET请求：http://localhost:8012/business/getRequestNoteByRequestNoteId/{requestNoteId}
+GET请求：http://localhost:8012/AuditModule/business/getRequestNoteByRequestNoteId/{requestNoteId}
 
 返回：[
        {
@@ -119,9 +117,9 @@ GET请求：http://localhost:8012/business/getRequestNoteByRequestNoteId/{reques
 
 -------------------------------------------------
 
-# 根据‘申请单号’，修改“申请单”的状态；
+#根据‘申请单号’，修改“申请单”的状态；
 
-PUT请求：http://localhost:8012/business/updateRequestNoteStatus/{requestNoteId}/{statusCode}
+PUT请求：http://localhost:8012/AuditModule/business/updateRequestNoteStatus/{requestNoteId}/{statusCode}
 
 返回：27bfe9758f65430cb6908a9f43d19f31:2 或者 update error
 

@@ -1,15 +1,12 @@
 package NHCBDP.auditModule.Controllers;
 
 import NHCBDP.auditModule.Domain.RequestNote;
-import NHCBDP.auditModule.Domain.TableFieldBean;
 import NHCBDP.auditModule.Services.DataSourceService;
 import NHCBDP.auditModule.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author wbliu
@@ -17,7 +14,7 @@ import java.util.Map;
  **/
 
 @RestController
-@RequestMapping("/business")
+@RequestMapping("/AuditModule/business")
 public class BusinessController {
 
     @Autowired
