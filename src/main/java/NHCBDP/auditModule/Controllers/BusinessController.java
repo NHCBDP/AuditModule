@@ -14,7 +14,7 @@ import java.util.List;
  **/
 
 @RestController
-@RequestMapping("/AuditModule/business")
+@RequestMapping("/business")
 public class BusinessController {
 
     @Autowired

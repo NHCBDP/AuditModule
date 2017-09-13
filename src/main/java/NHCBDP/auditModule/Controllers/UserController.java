@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/AuditModule/user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
